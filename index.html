@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamming WEB</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/img/logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <div class="head-left">
+            <img src="/img/logo.png" alt="">
+            <button><a href="#product">Pruduct</a></button>
+        </div>
+        <div class="head-right">
+            <p><a href="#NEXUS">NEXUS</a></p>
+            <p><a href="#VAULT">VAULT</a></p>
+            <p><a href="#about">ABOUT</a></p>
+            <p><a href="#SERVICES">SERVICES</a></p>
+            <p><a href="#contact">CONTANT</a></p>
+        </div>
+        </header>
+        <section class="hero-section autoBlur">
+            <div class="hero-vid" id="NEXUS">
+                <video loop autoplay plays-inlines class="hero-video">
+                    <source src="/videos/hero-1.mp4" type="video/mp4">
+                </video>
+                <div class="hero-info">
+                    <h1>REDEFINE</h1>
+                    <p>Enter the metagame layer Unleash the play Economy</p>
+                    <button>Watch Trailer</button>
+                </div>
+                <h1 class="gaming-text">GAMING</h1>
+                <div class="next-btn">
+                    NEXT
+                </div>
+            </div> 
+        </section>
+        <section class="about-section">
+            <div class="autoBlur">
+                <h1>DISCOVER THE WORLD'S LARGEST SHARED ADVENTURE</h1>
+            </div>
+            <p>Welcome to ZENTRY</p>
+            
+            <div class="image-box autoTakeFull" id="VAULT">
+                <img src="/img/about.webp" alt="">
+            </div>
+            <h4>Game of Games begins-your life, now an epic MMORPG</h4>
+            <h5>ZENTRY unites every player from countless games and platforms, both digital and phisical, into </h5>
+        </section>
+
+        <section class="info-section"> 
+            <h3>Into the Metagame layer</h3>
+            <p>A cross-platform metagame app, turning your activities across web2 and web3 games a new</p>
+
+            <div class="info-card" id="product">
+                <div class="card autoDisplay">
+                    <h1>RADIANT</h1>
+                    <p>
+                        An anime and gaming-inspied NFT colletion - the IP primed for Expamsion
+                    </p>
+                    <video src="videos/feature-1.mp4" loop autoplay muted plays-inline></video>
+                    <button>COMING SOON</button>
+                </div>
+                <div class="card autoDisplay">
+                    <h1>ZIGMA</h1>
+                    <p>
+                        An anime and gaming-inspied NFT colletion - the IP primed for Expamsion
+                    </p>
+                    <video src="videos/feature-2.mp4" loop autoplay muted plays-inline></video>
+                    <button>COMING SOON</button>
+                </div>
+                <div class="card autoDisplay">
+                    <h1>NEXUS</h1>
+                    <p>
+                        A gamified socail hub,adding a new dimension of play to socail interaction for Web3 communities.
+                    </p>
+                    <video src="videos/feature-3.mp4" loop autoplay muted plays-inline></video>
+                    <button>COMING SOON</button>
+                </div>
+                <div class="card autoDisplay" id="about">
+                    <h1>AZUL</h1>
+                    <p>
+                        A vross-world AI - elevating your gameplay to be more fun and productive
+                    </p>
+                    <video src="videos/feature-4.mp4" loop autoplay muted plays-inline></video>
+                    <button>COMING SOON</button>
+                </div>
+                <div class="card autoDisplay">
+                    <video src="videos/feature-5.mp4" loop autoplay muted plays-inline></video>
+                </div>
+                <div class="card autoDisplay">
+                    <h1>COMING SOON</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="SERVICES" >
+            <p>Join Zentry</p>
+            <div class="autoBlur">
+                <h1>LET'S BUILD THE NEW ERA OG GAMMING TOGETHER</h1>
+            </div>
+            <button id="contact">CONTACT US</button>
+            <img class="img1" src="/img/swordman.webp" alt="">
+            <img class="img2" src="/img/contact-1.webp" alt="">
+            <img class="img3" src="/img/contact-2.webp" alt="">
+        </section>
+        <section class="footer" id="contact">
+            <div class="link">
+                <a href=""><i class='bx bxl-facebook' style='color:#ffffff'></i></a>
+                <a href=""><i class='bx bxl-telegram' style='color:#ffffff' ></i></a>
+                <a href=""><i class='bx bxl-github' style='color:#ffffff' ></i></a>
+                <a href=""><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
+            </div>
+            <div class="copyRight">
+                <p>©EthanDraven | Reversed 2025</p>
+            </div>
+        </section>
+    </div>
+    <script>
+        const nextButton =document.querySelector('.next-btn');
+        const video =document.querySelector('.hero-video')
+
+        const movieList = ['videos/hero-1.mp4','videos/hero-2.mp4','videos/hero-3.mp4','videos/hero-4.mp4'];
+        let index=0;
+        nextButton.addEventListener('click',function(){
+            index +=1;
+
+            video.src= movieList[index];
+            if(index === 3){
+                index=0;
+            }
+        })
+
+    </script>
+</body>
+</html>
